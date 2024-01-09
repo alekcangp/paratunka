@@ -10,6 +10,7 @@
   <title>Легенда путешествий</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <script src="js/lazysizes.min.js" async=""></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" async=""></script>
   <!-- Google fonts-->
@@ -22,6 +23,7 @@
 </head>
 
 <body id="page-top">
+ 
   <style>
     /* customizable snowflake styling */
     .snowflake {
@@ -455,7 +457,21 @@
           <i class="far fa-regular fa-handshake fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Будем рады встретить Вас!</h2>
           <blockquote class="text-light mb-3">Дорога лучше всего измеряется не в милях, а в друзьях.</blockquote>
-          <div id="map" style="width:100%; height:350px"></div>
+
+          <script type="text/javascript">
+            var map;
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [52.954193,158.247957],
+                    zoom: 16
+                });
+                var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
+
+            DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
+              .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
+            });
+        </script>
+          <div id="map" style="width:100%; height:350px;border-radius:7px"></div>
           
       
           
@@ -515,21 +531,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
-
-  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-          <script type="text/javascript">
-              var map;
-              DG.then(function () {
-                  map = DG.map('map', {
-                      center: [52.954193,158.247957],
-                      zoom: 16
-                  });
-                  var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
-  
-              DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
-                .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
-              });
-          </script>
 
 
 </body>
