@@ -1,347 +1,536 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="База отдыха в Паратунке. Экскурсии, туры, проживание, баня." />
-        <meta name="author" content="legenda_travel" />
-        <meta name="yandex-verification" content="47c8fddcc0c33c75" />
-        <title>Легенда путешествий</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <script src="js/lazysizes.min.js" async=""></script>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" async=""></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css?v=02" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-      <style>
-        /* customizable snowflake styling */
-        .snowflake {
-          color: #fff;
-          font-size: 1em;
-          font-family: Arial, sans-serif;
-          text-shadow: 0 0 5px #000;
-        }
-         
-        .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
-        </style>
-        <div class="snowflakes" aria-hidden="true">
-          <div class="snowflake">
-            <div class="inner">❅</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❀</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❃</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❀</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❅</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❅</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">✻</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❅</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">✾</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❅</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❆</div>
-          </div>
-          <div class="snowflake">
-            <div class="inner">❀</div>
-          </div>
-        </div>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Камчатка</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                     
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Галерея</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Легенда путешествий</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Посмотрите на мир, чтобы найти красоту.</h2>
-                        <a class="btn btn-primary" href="#about">Поехали!</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Путешествия - это свобода</h2>
-                        <p class="text-white-50">
-                            О, какое пьянящее наслаждение — это свободное существование под открытым небом!.. Двигаться навстречу новым горизонтам, восторгаться неожиданным чудесам, всматриваться в неизведанную даль, оставлять в пути частицы своего сердца и обретать, приобщаясь к простому бытию, всю полноту своей индивидуальности — что может быть прекраснее!
-                        </p>
-                    </div>
-                </div>
-                <img class="img-fluid lazyload" data-src="assets/img/ipad2.gif" alt="..." />
-            </div>
-        </section>
-        <!-- Projects-->
-        <section class="projects-section bg-ligth" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
 
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark col-xl-8 col-lg-7 " data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <img data-src="assets/img/house.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/house1.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/house2.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/house3.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/house4.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-<!--
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="База отдыха в Паратунке. Экскурсии, туры, проживание, баня." />
+  <meta name="author" content="legenda_travel" />
+  <meta name="yandex-verification" content="47c8fddcc0c33c75" />
+  <title>Легенда путешествий</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <script src="js/lazysizes.min.js" async=""></script>
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" async=""></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css?v=02" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <style>
+    /* customizable snowflake styling */
+    .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .snowflake,
+    .snowflake .inner {
+      animation-iteration-count: infinite;
+      animation-play-state: running
+    }
+
+    @keyframes snowflakes-fall {
+      0% {
+        transform: translateY(0)
+      }
+
+      100% {
+        transform: translateY(110vh)
+      }
+    }
+
+    @keyframes snowflakes-shake {
+
+      0%,
+      100% {
+        transform: translateX(0)
+      }
+
+      50% {
+        transform: translateX(80px)
+      }
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      z-index: 9999;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: default;
+      animation-name: snowflakes-shake;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out
+    }
+
+    .snowflake .inner {
+      animation-duration: 10s;
+      animation-name: snowflakes-fall;
+      animation-timing-function: linear
+    }
+
+    .snowflake:nth-of-type(0) {
+      left: 1%;
+      animation-delay: 0s
+    }
+
+    .snowflake:nth-of-type(0) .inner {
+      animation-delay: 0s
+    }
+
+    .snowflake:first-of-type {
+      left: 10%;
+      animation-delay: 1s
+    }
+
+    .snowflake:first-of-type .inner,
+    .snowflake:nth-of-type(8) .inner {
+      animation-delay: 1s
+    }
+
+    .snowflake:nth-of-type(2) {
+      left: 20%;
+      animation-delay: .5s
+    }
+
+    .snowflake:nth-of-type(2) .inner,
+    .snowflake:nth-of-type(6) .inner {
+      animation-delay: 6s
+    }
+
+    .snowflake:nth-of-type(3) {
+      left: 30%;
+      animation-delay: 2s
+    }
+
+    .snowflake:nth-of-type(11) .inner,
+    .snowflake:nth-of-type(3) .inner {
+      animation-delay: 4s
+    }
+
+    .snowflake:nth-of-type(4) {
+      left: 40%;
+      animation-delay: 2s
+    }
+
+    .snowflake:nth-of-type(10) .inner,
+    .snowflake:nth-of-type(4) .inner {
+      animation-delay: 2s
+    }
+
+    .snowflake:nth-of-type(5) {
+      left: 50%;
+      animation-delay: 3s
+    }
+
+    .snowflake:nth-of-type(5) .inner {
+      animation-delay: 8s
+    }
+
+    .snowflake:nth-of-type(6) {
+      left: 60%;
+      animation-delay: 2s
+    }
+
+    .snowflake:nth-of-type(7) {
+      left: 70%;
+      animation-delay: 1s
+    }
+
+    .snowflake:nth-of-type(7) .inner {
+      animation-delay: 2.5s
+    }
+
+    .snowflake:nth-of-type(8) {
+      left: 80%;
+      animation-delay: 0s
+    }
+
+    .snowflake:nth-of-type(9) {
+      left: 90%;
+      animation-delay: 1.5s
+    }
+
+    .snowflake:nth-of-type(9) .inner {
+      animation-delay: 3s
+    }
+
+    .snowflake:nth-of-type(10) {
+      left: 25%;
+      animation-delay: 0s
+    }
+
+    .snowflake:nth-of-type(11) {
+      left: 65%;
+      animation-delay: 2.5s
+    }
+  </style>
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❀</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❃</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❀</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">✻</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">✾</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❆</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❀</div>
+    </div>
+  </div>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top">Камчатка</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="#signup">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Легенда путешествий</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Посмотрите на мир, чтобы найти красоту.</h2>
+          <a class="btn btn-primary" href="#about">Поехали!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About-->
+  <section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="text-white mb-4">Путешествия - это свобода</h2>
+          <p class="text-white-50">
+            О, какое пьянящее наслаждение — это свободное существование под открытым небом!.. Двигаться навстречу новым
+            горизонтам, восторгаться неожиданным чудесам, всматриваться в неизведанную даль, оставлять в пути частицы
+            своего сердца и обретать, приобщаясь к простому бытию, всю полноту своей индивидуальности — что может быть
+            прекраснее!
+          </p>
+        </div>
+      </div>
+      <img class="img-fluid lazyload" data-src="assets/img/ipad2.gif" alt="..." />
+    </div>
+  </section>
+  <!-- Projects-->
+  <section class="projects-section bg-ligth" id="projects">
+    <div class="container px-4 px-lg-5">
+      <!-- Featured Project Row-->
+      <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark col-xl-8 col-lg-7 "
+          data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img data-src="assets/img/house.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/house1.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/house2.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/house3.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/house4.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--
                  <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/house.webp" alt="..." /></div>
                    -->
-                  
-                  <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Проживание</h4>
-                            <p class="text-black-50 mb-0">Дом с сауной и кедровой фитобочкой. Все удобства. Вид на вулканы. На территории: мангал, банный чан, детский домик.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                   <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/ocean.webp" alt="..." /></div>
+
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Проживание</h4>
+            <p class="text-black-50 mb-0">Дом с сауной и кедровой фитобочкой. Все удобства. Вид на вулканы. На
+              территории: мангал, банный чан, детский домик.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project One Row-->
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/ocean.webp" alt="..." /></div>
                      -->
-                    <div id="carouselExampleFade1" class="carousel slide carousel-fade carousel-dark col-lg-6 " data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <img data-src="assets/img/ocean.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000"> 
-                            <img data-src="assets/img/ocean1.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/ocean2.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    
-                    
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Океан</h4>
-                                    <i class="text-light small">Ты катишь волны голубые<br>И блещешь гордою красой</i>
-                                    <hr class="text-light">
-                                    <p class="mb-0 text-white-50">
-                                       На юго-восточном побережье Камчатки много живописных бухт и интересных островов, где можно наблюдать за жизнью самых разных животных. Самые крупные морские жители – киты и касатки.
-                                    
-                                    </p>
- 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
+        <div id="carouselExampleFade1" class="carousel slide carousel-fade carousel-dark col-lg-6 "
+          data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img data-src="assets/img/ocean.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/ocean1.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/ocean2.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-                   <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/mountains.webp" alt="..." /></div>
+
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Океан</h4>
+                <i class="text-light small">Ты катишь волны голубые<br>И блещешь гордою красой</i>
+                <hr class="text-light">
+                <p class="mb-0 text-white-50">
+                  На юго-восточном побережье Камчатки много живописных бухт и интересных островов, где можно наблюдать
+                  за жизнью самых разных животных. Самые крупные морские жители – киты и касатки.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Two Row-->
+      <div class="row gx-0 justify-content-center">
+
+        <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/mountains.webp" alt="..." /></div>
 -->
-                    <div id="carouselExampleFade2" class="carousel slide carousel-fade carousel-dark col-lg-6 " data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <img data-src="assets/img/mountains.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/mountains1.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/mountains2.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/mountains3.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+        <div id="carouselExampleFade2" class="carousel slide carousel-fade carousel-dark col-lg-6 "
+          data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img data-src="assets/img/mountains.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/mountains1.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/mountains2.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/mountains3.webp" class="d-block w-100 lazyload" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Вулканы</h4>
-                                    <p class="mb-0 text-white-50">Поехать на Край света, взойти на действующие вулканы, посмотреть на следы недавних извержений. Прожить вместе маленькую жизнь — все это возможно!
-                                        Мы познакомимся с нереальной природой Камчатки, земли, где спят драконы!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <!--
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Вулканы</h4>
+                <p class="mb-0 text-white-50">Поехать на Край света, взойти на действующие вулканы, посмотреть на следы
+                  недавних извержений. Прожить вместе маленькую жизнь — все это возможно!
+                  Мы познакомимся с нереальной природой Камчатки, земли, где спят драконы!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <!--
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/thermal.webp" alt="..." /></div>
                     -->
-                    <div id="carouselExampleFade3" class="carousel slide carousel-fade carousel-dark col-lg-6 " data-bs-ride="carousel">
-                        <div class="carousel-inner ">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <img data-src="assets/img/thermal.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/thermal1.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img data-src="assets/img/thermal2.webp" class="d-block w-100 lazyload" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    
-                    
-                    
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Источники</h4>
-                                    <p class="mb-0 text-white-50">На Камчатке сосредоточено огромное количество термальных источников. Поселок Термальный, Паратунка, подножие Вилючинского вулкана, Налычево и другие места популярны среди местных жителей и гостей.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="carouselExampleFade3" class="carousel slide carousel-fade carousel-dark col-lg-6 "
+          data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img data-src="assets/img/thermal.webp" class="d-block w-100 lazyload" alt="...">
             </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-regular fa-handshake fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Будем рады встретить Вас!</h2>
-                        <blockquote class="text-light mb-3">Дорога лучше всего измеряется не в милях, а в друзьях.</blockquote>
-                        
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/thermal1.webp" class="d-block w-100 lazyload" alt="...">
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Адрес</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Камчатский край, Паратунка, Гнечко 17</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-brands fa-instagram text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Инстаграм</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="https://www.instagram.com/legenda_travel/">@legenda_travel</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Телефон</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+7 (914) 626-9990</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-4" href="https://wa.me/79146269990"><i class="fab fa-whatsapp fa-3x"></i></a>
-                    <a class="mx-4" href="https://t.me/+79146269990"><i class="fab fa-telegram fa-3x"></i></a>
-                </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img data-src="assets/img/thermal2.webp" class="d-block w-100 lazyload" alt="...">
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">&copy; Легенда путешествий 2024</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Источники</h4>
+                <p class="mb-0 text-white-50">На Камчатке сосредоточено огромное количество термальных источников.
+                  Поселок Термальный, Паратунка, подножие Вилючинского вулкана, Налычево и другие места популярны среди
+                  местных жителей и гостей.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Signup-->
+  <section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <i class="far fa-regular fa-handshake fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Будем рады встретить Вас!</h2>
+          <blockquote class="text-light mb-3">Дорога лучше всего измеряется не в милях, а в друзьях.</blockquote>
+          <div id="map" style="width:100%; height:350px"></div>
+          
+      
+          
+
+        </div>
         
-        
-    </body>
+      </div>
+
+  </section>
+  <!-- Contact-->
+  <section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Адрес</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50">Камчатский край, Паратунка, Гнечко 17</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-brands fa-instagram text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Инстаграм</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50"><a href="https://www.instagram.com/legenda_travel/">@legenda_travel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Телефон</h4>
+              <hr class="my-4 mx-auto" />
+              <div class="small text-black-50">+7 (914) 626-9990</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <a class="mx-4" href="https://wa.me/79146269990"><i class="fab fa-whatsapp fa-3x"></i></a>
+        <a class="mx-4" href="https://t.me/+79146269990"><i class="fab fa-telegram fa-3x"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">&copy; Легенда путешествий 2024</div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+          <script type="text/javascript">
+              var map;
+              DG.then(function () {
+                  map = DG.map('map', {
+                      center: [52.954193,158.247957],
+                      zoom: 16
+                  });
+                  var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
+  
+              DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] }).on('click', (e) => {location.href="https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16"})
+              });
+          </script>
+
+
+</body>
+
 </html>
