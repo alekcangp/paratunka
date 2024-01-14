@@ -495,19 +495,6 @@ VANTA.BIRDS({
           <h2 class="text-white mb-5">Будем рады встретить Вас!</h2>
           <blockquote class="text-light mb-3">Дорога лучше всего измеряется не в милях, а в друзьях.</blockquote>
 
-          <script type="text/javascript">
-            var map;
-            DG.then(function () {
-                map = DG.map('map', {
-                    center: [52.954193,158.247957],
-                    zoom: 16
-                });
-                var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
-
-            DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
-              .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
-            });
-        </script>
           <div id="map" style="width:100%; height:350px;border-radius:7px"></div>
           
       
@@ -554,13 +541,13 @@ VANTA.BIRDS({
           </div>
         </div>
       </div>
-      <div class="social d-flex justify-content-center">
-        <a class="mx-4" href="tel:+79146269990"><i class="fas fa-mobile-retro fa-3x"></i></a>
-        <a class="mx-4" href="https://t.me/+79146269990"><i class="fab fa-telegram fa-3x"></i></a>
-      </div>
+      
     </div>
   </section>
-  
+  <!--Whatsapp chat-->
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-209c8d4e-71d7-4293-8ce9-2f7fa3f662a7" data-elfsight-app-lazy></div>
+
   <!-- Footer-->
   <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">&copy; Легенда путешествий 2024</div>
@@ -569,8 +556,21 @@ VANTA.BIRDS({
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
-  <!--Whatsapp chat-->
   
+<!--Map-->
+<script type="text/javascript">
+  var map;
+  DG.then(function () {
+      map = DG.map('map', {
+          center: [52.954193,158.247957],
+          zoom: 16
+      });
+      var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
+
+  DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
+    .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
+  });
+</script>
 
 </body>
 
