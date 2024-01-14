@@ -21,6 +21,27 @@
 </head>
 
 <body id="page-top">
+  <template>
+    <Slider :images="images" />
+  </template>
+  
+  <script>
+  import { default as Slider }  from 'troisjs/src/components/sliders/Slider1.vue';
+  
+  export default {
+    components: { Slider },
+    data() {
+      return {
+        images: [
+          { src: '/assets/images/img1.jpg' },
+          { src: '/assets/images/img2.jpg' },
+          { src: '/assets/images/img3.jpg' },
+          { src: '/assets/images/img4.jpg' },
+        ],
+      };
+    },
+  };
+  </script>
 
   <div class="preloader">
     <div class="containerspin" id="spin">
@@ -251,6 +272,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
           <li class="nav-item"><a class="nav-link" href="#signup">Контакты</a></li>
         </ul>
       </div>
@@ -337,7 +359,7 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Проживание</h4>
-            <p class="text-black-50 mb-0">Дом с сауной и кедровой фитобочкой. Все удобства. Вид на вулканы. На
+            <p class="text-black mb-0">Дом с сауной и кедровой фитобочкой. Все удобства. Вид на вулканы. На
               территории: мангал, банный чан, детский домик.</p>
           </div>
         </div>
@@ -507,9 +529,20 @@ VANTA.BIRDS({
 })
 </script>
 
+<!-- reviews-->
+<!---apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif-->
+<section class="reviews-section" id="reviews">
+  <div class="container px-4 px-lg-5">
+  <script src="https://res.smartwidgets.ru/app.js" defer></script>
+  <div class="sw-app" data-app="e52c3a2abf9b5e3eaaacd22e47c45e62"></div>  
+</div>
+   
+
+</section>
+
   <!-- Signup-->
   <section class="signup-section" id="signup">
-    <div class="container px-4 px-lg-5">
+      <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <i class="far fa-regular fa-handshake fa-2x mb-2 text-white"></i>
@@ -517,13 +550,10 @@ VANTA.BIRDS({
           <blockquote class="text-light mb-3">Дорога лучше всего измеряется не в милях, а в друзьях.</blockquote>
 
           <div id="map" style="width:100%; height:350px;border-radius:7px"></div>
-          
-      
-          
-
+  
         </div>
-        
       </div>
+    </div>
 
   </section>
   <!-- Contact-->

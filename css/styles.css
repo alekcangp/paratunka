@@ -11243,6 +11243,11 @@ body {
 
 .projects-section {
   padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/projects.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11261,6 +11266,15 @@ body {
   .projects-section .project-text {
     padding: 2rem;/**5*/
   }
+}
+
+.reviews-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/reviews.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .signup-section {
