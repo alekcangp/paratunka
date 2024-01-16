@@ -56,7 +56,7 @@
 }
 
 .logo img {
-  animation: show-logo 5s infinite ;
+  animation: show-logo 15s 3s infinite ;
 }
 
 @keyframes show-background {
@@ -75,8 +75,12 @@
 
 @keyframes show-logo {
  
-  100% {
-    transform: rotate3d(0,1,0, 360deg)
+  30% {
+    transform: rotate3d(0,1,0, 360deg);
+}
+
+100% {
+  transform: rotate3d(0,1,0, 360deg);
 }
 
 }
