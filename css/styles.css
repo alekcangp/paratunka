@@ -56,8 +56,7 @@
 }
 
 .logo img {
-  animation: show-logo 2s 1.5s cubic-bezier(0,1.79,.28,.73) forwards;
-  opacity: 0;
+  animation: show-logo 5s infinite ;
 }
 
 @keyframes show-background {
@@ -65,7 +64,7 @@
     opacity: 0;
     transform: none;
   }
-  10% {
+  15% {
     opacity: 1;
   }
   100% {
@@ -75,18 +74,12 @@
 }
 
 @keyframes show-logo {
-  0% {
-    opacity: 0;
-    transform: scale(.5);
-  }
+ 
   100% {
-    opacity: 1;
-    transform: none;
-
-  }
+    transform: rotate3d(0,1,0, 360deg)
 }
 
-
+}
 
 
 video {
