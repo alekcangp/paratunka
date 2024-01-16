@@ -11,6 +11,84 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+
+
+/* The magic here that makes animations wait */ 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+.animated-header {
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.animated-header:before {
+  animation: show-background 60s .5s cubic-bezier(0,1,0.5,1) forwards;
+  background: url('../assets/img/bg-masthead.webp') no-repeat center;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100vw;
+}
+
+.logo, .loading {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.js-loading .loading {
+  display: block;
+}
+
+.logo img {
+  animation: show-logo 2s 1.5s cubic-bezier(0,1.79,.28,.73) forwards;
+  opacity: 0;
+}
+
+@keyframes show-background {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5) translate(0,110px);
+  }
+}
+
+@keyframes show-logo {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+
+  }
+}
+
+
+
+
 video {
   width: 100vw;
   height: 100vh;
@@ -11197,7 +11275,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 75%, #000 100%), url("../assets/img/bg-masthead.webp");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 75%, #000 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

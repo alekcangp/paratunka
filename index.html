@@ -44,7 +44,7 @@
       }, 1000);
   }
   </script>
-  
+   
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
@@ -64,9 +64,18 @@
       </div>
     </div>
   </nav>
+
+  
   <!-- Masthead-->
   <header class="masthead">
+  <div class="animated-header"></div>
+   
+
+
+
+
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+      
       <div class="d-flex justify-content-center">
         <div class="text-center">
           <h1 class="mx-auto my-0 text-uppercase">Легенда путешествий</h1>
@@ -78,6 +87,9 @@
   </header>
   <!-- About-->
   <section class="about-section text-center" id="about">
+    <div class="logo">
+      <img src="assets/img/logo.webp"/>
+    </div>
     <div class=" px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-8">
@@ -425,6 +437,16 @@ filter: drop-shadow(0px 0px 1px #000); position:absolute; margin-left:calc(100vw
   DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
     .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
   });
+
+
+  document.body.className += " js-loading";
+
+window.addEventListener("load", showPage, false);
+
+function showPage() {
+  document.body.className = document.body.className.replace("js-loading","");
+}
+
 </script>
 
 </body>
