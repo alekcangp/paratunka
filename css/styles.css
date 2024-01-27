@@ -11,6 +11,42 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.glitch {
+  opacity: .5;
+    mix-blend-mode: hard-light;
+    animation: glitch2 5s linear infinite;
+}
+
+@keyframes glitch2
+{
+	0%
+	{
+		object-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+	10%
+	{
+		object-position: 5px 0;
+	}
+	15%
+	{
+		object-position: -5px 0;
+	}
+	20%
+	{
+		filter: hue-rotate(360deg);
+	}
+  25%
+	{
+		object-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+  100%
+	{
+		object-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+}
 
 
 /* The magic here that makes animations wait */ 
