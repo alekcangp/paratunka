@@ -14,7 +14,7 @@
 .glitch {
   opacity: .5;
     mix-blend-mode: hard-light;
-    animation: glitch2 5s linear infinite;
+    animation: glitch2 10s linear infinite;
 }
 
 @keyframes glitch2
