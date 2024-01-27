@@ -17,6 +17,7 @@
  .glitch
  {
    position:absolute;
+   vertical-align: middle;
    margin-left: 100px;
    margin-top:-170px;
    z-index: 0;
