@@ -34,7 +34,7 @@
 	}
 	20%
 	{
-		filter: hue-rotate(360deg);
+		filter: hue-rotate(-90deg);
 	}
   25%
 	{
