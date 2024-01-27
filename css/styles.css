@@ -16,7 +16,7 @@
 /*glitch effect*/
 .ltr {
   position:absolute;
-  margin-left: -35px;
+  margin-left: 135px;
   margin-top:-171px;
   z-index: 0;
   content: url(../assets/img/fox2.png);
