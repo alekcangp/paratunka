@@ -19,6 +19,9 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css?v=14" rel="stylesheet" />
 
+  <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -177,9 +180,32 @@
             <h4>Проживание</h4>
             <p class="text-black mb-0">Дом с сауной и кедровой фитобочкой. Все удобства. Вид на вулканы. На
               территории: мангал, банный чан, детский домик.</p>
+              <br>
+              <button type="button" class="btn btn-primary video-btn" id="triggger">
+                Видео
+              </button>
+              <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+              <script>
+                document.getElementById("triggger").addEventListener("click", () => {
+                  Fancybox.show([
+                    {
+                      src: "https://www.youtube.com/shorts/8cig8XW47o8",
+                      thumb: "https://i.ytimg.com/vi/8cig8XW47o8/hqdefault.jpg",
+                    },
+                    {
+                      src: "https://www.youtube.com/shorts/4cbtyTzLZzY",
+                      thumb: "https://i.ytimg.com/vi/4cbtyTzLZzY/hqdefault.jpg",
+                    }
+                  ]);
+                });  
+              </script>
+
+
           </div>
         </div>
       </div>
+
+      
       <!-- Project One Row-->
       <div class="row gx-0 justify-content-center ">
         <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/ocean.webp" alt="..." /></div>
