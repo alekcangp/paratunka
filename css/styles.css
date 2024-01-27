@@ -17,11 +17,11 @@
  .glitch
  {
    position:absolute;
-   margin-left: 130px;
-   margin-top:-178px;
+   margin-left: 100px;
+   margin-top:-170px;
    z-index: 0;
    width: 165px;
-   height: 210px;
+   height: 178px;
    background: url(../assets/img/fox2.png);
    background-size: cover;
  }
