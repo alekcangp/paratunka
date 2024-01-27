@@ -14,122 +14,54 @@
 
 
 /*glitch effect*/
- .glitch
- {
-   position:absolute;
-   vertical-align: middle;
-   margin-left: 100px;
-   margin-top:-170px;
-   z-index: 0;
-   width: 165px;
-   height: 178px;
-   background: url(../assets/img/fox2.png);
-   background-size: cover;
- }
-
-.glitch:before
- {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: url(../assets/img/fox2.png);
-   background-size: cover; /* contain for split effect */
-   opacity: .5;
-   mix-blend-mode: hard-light;
-   animation: glitch2 5s linear infinite;
- }
-
-.glitch:hover:before
-{
- animation: glitch1 1s linear infinite;
+.ltr {
+  position:absolute;
+  margin-left: -35px;
+  margin-top:-171px;
+  z-index: 0;
+  content: url(../assets/img/fox2.png);
+  width: 165px;
+  height: 178px;
+  object-fit: cover;
 }
 
-@keyframes glitch1
-{
- 0%
- {
-   background-position: 0 0;
-   filter: hue-rotate(0deg);
- }
- 10%
- {
-   background-position: 3px 0;
- }
- 20%
- {
-   background-position: -3px 0;
- }
- 30%
- {
-   background-position: 7px 0;
- }
- 40%
- {
-   background-position: -3px 0;
- }
- 50%
- {
-   background-position: -6px 0;
- }
- 60%
- {
-   background-position: -12px 0;
- }
- 70%
- {
-   background-position: 0 -10px;
- }
- 80%
- {
-   background-position: -15px -5px;
- }
- 81%
- {
-   background-position: 0 0;
- }
- 100%
- {
-   background-position: 0 0;
-   filter: hue-rotate(360deg);
- }
-}
-
-@keyframes glitch2
-{
- 0%
- {
-   background-position: 0 0;
-   filter: hue-rotate(0deg);
- }
- 10%
- {
-   background-position: 7px 0;
- }
- 15%
- {
-   background-position: -7px 0;
- }
- 20%
- {
-   filter: hue-rotate(360deg);
- }
- 25%
- {
-   background-position: 0 0;
-   filter: hue-rotate(0deg);
- }
- 100%
- {
-   background-position: 0 0;
-   filter: hue-rotate(0deg);
- }
+.ltr2 {
+  opacity: .5;
+  mix-blend-mode: hard-light;
+  animation: ltr 5s linear infinite;
 }
 
 
-
+@keyframes ltr 
+{
+  0%
+  {
+    object-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  10%
+  {
+    object-position: 3px 0;
+  }
+  15%
+  {
+    object-position: -3px 0;
+  }
+  20%
+  {
+    filter: hue-rotate(270deg);
+  }
+  25%
+  {
+    object-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    object-position: 0 0;
+    filter: hue-rotate(0deg);
+  }
+ }
 
 
 
