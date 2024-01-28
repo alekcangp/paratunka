@@ -496,7 +496,7 @@ filter: drop-shadow(0px 0px 1px #000); position:absolute; margin-left:calc(100vw
       });
       var logomap = DG.icon({iconUrl: 'assets/img/logomap.png',iconSize: [75, 50],});
 
-  DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map)//.bindLabel('<b>Легенда путешествий<b>', { static: true, offset:[-150,-70] })
+  DG.marker([52.954193,158.247957],{icon:logomap}).addTo(map).bindLabel('<a class="text-white text-decoration-none h6" href="https://yandex.ru/maps/?ll=158.248475%2C52.954530&mode=routes&rtext=~52.954511%2C158.248173&z=17" target="_blank"><span class="fas fa-route"></span> Как доехать</a>', { static: true, offset:[-70,-70] })
     .on('click', (e) => {window.open("https://2gis.ru/p_kamchatskiy/directions/points/%7C158.247957%2C52.954193%3B70030076417159865?m=158.247957%2C52.954193%2F16","_blank")})
   });
 
